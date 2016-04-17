@@ -1,15 +1,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.marek.fragments.PhoneStatus">
+    android:layout_height="match_parent" tools:context="com.marek.fragments.PhoneInfo">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|top" />
 
     <TextView
+        android:id="@+id/tv_phoneInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_phoneStatus"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal|top" />
 

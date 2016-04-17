@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PhoneInfoActivity"
+            android:name=".PhoneActivity"
             android:label="@string/title_activity_phone_info"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(k);
                 break;
             case R.id.btn_phone_info:
-                k = new Intent(MainActivity.this,PhoneInfoActivity.class);
+                k = new Intent(MainActivity.this,PhoneActivity.class);
                 startActivity(k);
                 break;
 

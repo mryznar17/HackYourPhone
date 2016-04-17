@@ -7,12 +7,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_phone_info" tools:context="com.marek.sensors.PhoneInfoActivity">
+    tools:showIn="@layout/activity_phone_info" tools:context="com.marek.sensors.PhoneActivity">
 
-    <TextView
-        android:id="@+id/tv_pd"
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone Details:"
-        android:layout_centerHorizontal="true" />
+        android:text="Phone Info"
+        android:id="@+id/btn_phoneInfo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonTapPhoneInfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Status"
+        android:id="@+id/btn_phoneStatus"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonTapPhoneStatus" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/btn_phoneStatus"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+        <fragment android:name="com.marek.fragments.PhoneInfo"
+            android:id="@+id/fragment_phone_info"
+            android:layout_weight="2.18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <fragment android:name="com.marek.fragments.PhoneStatus"
+            android:id="@+id/fragment_phone_status"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
 </RelativeLayout>
