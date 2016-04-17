@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 k = new Intent(MainActivity.this,CameraActivity.class);
                 startActivity(k);
                 break;
+            case R.id.btn_bluetooth:
+                k = new Intent(MainActivity.this,BluetoothActivity.class);
+                startActivity(k);
+                break;
         }
     }
 

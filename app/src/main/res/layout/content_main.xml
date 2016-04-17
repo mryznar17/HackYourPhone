@@ -35,4 +35,13 @@
         android:layout_below="@+id/btn_phone_info"
         android:layout_centerHorizontal="true"
         android:onClick="onButtonTap" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:id="@+id/btn_bluetooth"
+        android:layout_below="@+id/btn_camera"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonTap" />
 </RelativeLayout>
