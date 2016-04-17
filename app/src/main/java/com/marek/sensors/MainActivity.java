@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 k = new Intent(MainActivity.this,PhoneActivity.class);
                 startActivity(k);
                 break;
-
+            case R.id.btn_camera:
+                k = new Intent(MainActivity.this,CameraActivity.class);
+                startActivity(k);
+                break;
         }
     }
 

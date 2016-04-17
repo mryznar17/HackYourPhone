@@ -7,32 +7,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main2" tools:context="com.marek.sensors.MainActivity">
+    tools:showIn="@layout/activity_camera" tools:context="com.marek.sensors.CameraActivity">
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sensors"
-        android:id="@+id/btn_sensor"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onButtonTap" />
+        android:src="@drawable/ic_launcher"
+        android:layout_above="@+id/btn_photo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PHONE INFO"
-        android:id="@+id/btn_phone_info"
-        android:layout_below="@+id/btn_sensor"
-        android:layout_centerHorizontal="true"
-        android:onClick="onButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Camera"
-        android:id="@+id/btn_camera"
-        android:layout_below="@+id/btn_phone_info"
-        android:layout_centerHorizontal="true"
-        android:onClick="onButtonTap" />
+        android:text="Take a photo!"
+        android:id="@+id/btn_photo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
